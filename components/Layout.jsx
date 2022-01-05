@@ -22,7 +22,7 @@ export default function Layout({children, title, description, home}) {
           <>
             <Image
               priority
-              src="/image/img_photocam.jpg"
+              src="/image/img_photocam.svg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -36,7 +36,7 @@ export default function Layout({children, title, description, home}) {
               <a>
                 <Image
                   priority
-                  src="/image/img_photocam.jpg"
+                  src="/image/img_photocam.svg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
