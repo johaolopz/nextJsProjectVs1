@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 // import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 export default function index({data}) {
     //###FETCH DEL LADO DEL CLIENTE
@@ -15,7 +16,11 @@ export default function index({data}) {
             {
                 data.map(({id, title, body}) => (
                     <div key={id}>
-                        <h3>{id} - {title}</h3>
+                        <h3>
+                            <Link href={`/blog/${id}`}>
+                                <a>{id} - {title}</a>
+                            </Link>
+                        </h3>
                         <p>{body}</p>
                     </div>
                 ))
